@@ -1,0 +1,9 @@
+# ignore others for testing
+*
+! .gitignore
+
+! /_includes/themes/sidebar
+! /assets/themes/sidebar
+! /manifest.yml
+! /packager.yml
+! /README.md
