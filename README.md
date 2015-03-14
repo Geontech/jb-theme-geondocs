@@ -1,3 +1,8 @@
-This is blog theme compatible with Jekyll-Bootstrap
+This is blog theme compatible with [Jekyll-Bootstrap](http://jekyllbootstrap.com).
 
-<http://jekyllbootstrap.com> for usage.
+# features
+- Bootstrap3
+- Right sidebar, which shows following:
+  - Recent posts
+  - All categories
+  - All tags
