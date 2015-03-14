@@ -1,9 +1,11 @@
 # ignore others for testing
-*
-! .gitignore
+/*
 
-! /_includes/themes/sidebar
-! /assets/themes/sidebar
-! /manifest.yml
-! /packager.yml
-! /README.md
+!/_includes
+/_includes/JB
+!/assets
+/assets/*.*
+
+!/manifest.yml
+!/packager.yml
+!/README.md
