@@ -12,3 +12,18 @@ $ rake theme:install git="https://github.com/remonbonbon/jb-theme-sidebar.git"
   - All categories
   - All tags
 - Bootstrap3
+
+# Configuration
+## specify lang
+Add following line to `_config.yml`.
+~~~
+lang: xx
+~~~
+
+then,
+~~~
+<!DOCTYPE html>
+<html lang="xx">
+~~~
+
+if not specified, use the default; `lang="en"`
