@@ -84,3 +84,35 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+/* From GITHUB.IO original */
+.zip_download_link {
+  display: block;
+  width: 30px;
+  height:15px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url({{ ASSET_PATH }}/images/sprite_download.png) no-repeat bottom left;
+  background-size: 100px 70px;
+}
+
+.tar_download_link {
+  display: block;
+  width: 30px;
+  height:15px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url({{ ASSET_PATH }}/images/sprite_download.png) no-repeat bottom right;
+  background-size: 100px 70px;
+  margin-left: 0px;
+}
+
+.zip_download_link:hover {
+  background: url({{ ASSET_PATH }}/images/sprite_download.png) no-repeat top left;
+  background-size: 100px 70px;
+}
+
+.tar_download_link:hover {
+  background: url({{ ASSET_PATH }}/images/sprite_download.png) no-repeat top right;
+  background-size: 100px 70px;
+}
