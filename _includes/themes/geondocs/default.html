@@ -27,7 +27,7 @@
   </head>
   <body>
     <!-- top navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -36,19 +36,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+          <a class="navbar-brand" href="http://geontech.com">
+            <img class="geon-logo" src="{{ ASSET_PATH }}/images/geon.png">
+          </a>
+          <a class="navbar-brand" href="{{ HOME_PATH }}">
+            {{ site.title }}
+          </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
-            <!-- Download links -->
+
+            <!-- Download link -->
             <li>
-              <a class="zip_download_link" href="https://github.com/Geontech/rest-python/zipball/master">Download this project as a .zip file</a>
-            </li>
-            <li>
-              <a class="tar_download_link" href="https://github.com/Geontech/rest-python/tarball/master">Download this project as a tar.gz file</a>
+              <p class="navbar-text navbar-right">
+                <a href="https://github.com/Geontech/rest-python/tarball/master">Download</a>
+              </p>
             </li>
           </ul>
         </div>
@@ -56,10 +61,10 @@
     </nav>
 
     <!-- main content -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top:55px;">
       <div class="row">
         <!-- main article -->
-        <article class="col-sm-12">
+        <article class="col-sm-10 col-sm-offset-1">
           {{ content }}
         </article>
       </div>
@@ -67,7 +72,7 @@
       <!-- footer copyright -->
       <hr>
       <footer class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-10 col-sm-offset-1">
           <p>&copy; {{ site.time | date: '%Y' }}
             <a href="http://github.com/{{ site.author.github }}" target="_blank">{{ site.author.name }}</a>
             with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>

@@ -2,7 +2,7 @@
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
 <div class="row">
-  <div class="col-sm-9 post">
+  <div class="col-sm-9 post content-box">
     <div class="post-meta">
       <div class="date">{{ page.date | date: "%Y-%m-%d" }}</div>
 
@@ -50,7 +50,7 @@
   {% endif %}
   </div>
 
-  <nav class="col-sm-3 sidebar">
+  <nav class="col-sm-3 sidebar-box">
     <h4>Published</h4>
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 
